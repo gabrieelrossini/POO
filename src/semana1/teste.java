@@ -1,3 +1,6 @@
+package src.semana1;
+
+
 // Meu primeiro programa em Java
 
 public class teste
