@@ -3,7 +3,7 @@ package src.semana1;
 
 // Meu primeiro programa em Java
 
-public class teste
+public class Teste
 {
     public static void main (String[] args)
     {

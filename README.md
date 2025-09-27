@@ -25,26 +25,26 @@ Este repositório tem o intuito de registrar a matéria de **Programação Orien
 
 ## Conteúdo Semanal
 
-O curso é dividido em sete semanas, sendo elas:
+O curso é dividido em oito semanas, sendo sete de matéria e a ultima de revisão. Os tópicos semanais são os seguintes:
 
-- **Semana 1:** Paradigmas de Programação; Introdução ao Paradigma Orientado a Objetos; Java e Frameworks de Desenvolvimento
+- [x] **Semana 1:** Paradigmas de Programação; Introdução ao Paradigma Orientado a Objetos; Java e Frameworks de Desenvolvimento
     - [Ver Anotações](./docs/semana_1.md)
     - [Ver Código](./src/semana1/)
-- **Semana 2:**
+- [ ] **Semana 2:** Classes e Objetos; Encapsulamento e Ocultação de Informação
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
-- **Semana 3:**
+- [ ] **Semana 3:** Herança, Polimorfismo e Interfaces
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
-- **Semana 4:**
+- [ ] **Semana 4:** Classes e Métodos Genéricos e Classes de Coleções em Java
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
-- **Semana 5:**
+- [ ] **Semana 5:** Conjuntos e Mapas
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
-- **Semana 6:**
+- [ ] **Semana 6:** Tratamento de Exceções
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
-- **Semana 7:**
+- [ ] **Semana 7:** Streams, Serialização e Deserialização de Objetos; uso de Threads em Java e Programação Java para Redes de Computadores
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
