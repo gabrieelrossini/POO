@@ -1,6 +1,6 @@
 package src.semana1;
 
-// Exercício de atividade, convertendo C em F e viceversa
+// Exercício de atividade complementar, convertendo C em F e viceversa
 
 import java.util.Scanner;
 
