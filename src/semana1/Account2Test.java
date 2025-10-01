@@ -36,5 +36,7 @@ public class Account2Test
         // exibe os saldos
         System.out.printf("%s balance: $%.2f %n", account1.getName(), account1.getBalance());
         System.out.printf("%s balance: $%.2f %n%n", account2.getName(), account2.getBalance());
+
+        input.close();
     }
 }
