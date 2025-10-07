@@ -30,7 +30,7 @@ O curso é dividido em oito semanas, sendo sete de matéria e a ultima de revis�
 - [x] **Semana 1:** Paradigmas de Programação; Introdução ao Paradigma Orientado a Objetos; Java e Frameworks de Desenvolvimento
     - [Ver Anotações](./docs/semana_1.md)
     - [Ver Código](./src/semana1/)
-- [ ] **Semana 2:** Classes e Objetos; Encapsulamento e Ocultação de Informação
+- [x] **Semana 2:** Classes e Objetos; Encapsulamento e Ocultação de Informação
     - [Ver Anotações](./docs/semana_2.md)
     - [Ver Código](./src/semana2/)
 - [ ] **Semana 3:** Herança, Polimorfismo e Interfaces
