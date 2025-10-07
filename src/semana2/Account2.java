@@ -1,4 +1,4 @@
-package src.semana1;
+package src.semana2;
 
 // Exemplo 4 do texto-base: Account2.java
 /* Classe Account2 com uma variável de instância balance do tipo double

@@ -1,4 +1,4 @@
-package src.semana1;
+package src.semana2;
 
 // Exemplo 5 do texto-base: Account2Test.java
 // Entrada e saída de números de ponto flutuante com objeto Account
