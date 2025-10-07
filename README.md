@@ -9,7 +9,7 @@ Este repositório tem o intuito de registrar a matéria de **Programação Orien
 ## Objetivos
 
 - Centralizar as anotações e códigos da disciplina.
-- Aplicar os coneitos de POO em pequenos projetos.
+- Aplicar os conceitos de POO em pequenos projetos.
 
 ## Tecnologias Utilizadas
 
@@ -31,8 +31,8 @@ O curso é dividido em oito semanas, sendo sete de matéria e a ultima de revis�
     - [Ver Anotações](./docs/semana_1.md)
     - [Ver Código](./src/semana1/)
 - [ ] **Semana 2:** Classes e Objetos; Encapsulamento e Ocultação de Informação
-    - [Ver Anotações](./docs/)
-    - [Ver Código](./src/)
+    - [Ver Anotações](./docs/semana_2.md)
+    - [Ver Código](./src/semana2/)
 - [ ] **Semana 3:** Herança, Polimorfismo e Interfaces
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)

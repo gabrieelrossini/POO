@@ -5,14 +5,12 @@ package src.semana2;
  * e um construtor e método deposit que executa a validação
  */
 
-public class Account2 
-{
+public class Account2 {
     private String name; // variável de instância
     private double balance; // variável de instância
 
     // Construtor de Account que recebe dois parâmetros
-    public Account2(String name, double balance)
-    {
+    public Account2(String name, double balance) {
         this.name = name; // atribui name à variável de instância name
 
         // valida que o balance é maior que 0.0
@@ -29,20 +27,17 @@ public class Account2
     }
 
     // método retorna o saldo da conta
-    public double getBalance()
-    {
+    public double getBalance() {
         return balance;
     }
 
     // método que define o nome
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
     // método que retorna o nome
-    public String getName()
-    {
+    public String getName() {
         return name; // retorna o valor de name ao chamador
     } // fim do método getName
 } // fim da classe Account2

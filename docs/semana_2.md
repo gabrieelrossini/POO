@@ -24,7 +24,7 @@
 
 - **Definição:** Encapsulamento significa agrupar atributos e métodos dentro de uma classe, tratando-os como uma única unidade. A ocultação da informação é o princípio de proteger os dados (atributos) de acesso direto e indevido, forçando a interação através de métodos públicos (`getters` e `setters`).
 - **Exemplo:** Um atributo `salario` em uma classe `Funcionario` é declarado como `private`. Para acessá-lo ou modificá-lo, outras partes do programa devem usar os métodos públicos `getSalario()` e `setSalario()`.
-- **Conexão:** É um pilar da POO que garante a integridade dos dados de um objeto e torna o software mais flexível e seguro.
+- **Conexão:** O encapsulamento é o ato de "encapsular" tudo que está relacionado em um só lugar (classe), já ocultação da informação é a ideia de esconder a complexidade interna de um objeto do mundo exterior e proteger os dados internos contra manipulações indevidas.
 
 ### Construtores
 
@@ -39,8 +39,14 @@
 - **Diferença entre Tipos Primitivos e Tipos por Referência:** Variáveis de tipos primitivos (`int`, `double`, `boolean`) armazenam o valor diretamente. Variáveis de tipos por referência (`String`, `Scanner`, ou qualquer objeto que você criar) armazenam o endereço de memória onde o objeto está. Isso tem implicações importantes em como os dados são passados para os métodos.
 - **Métodos `set` e `get` (Setters e Getters):** Forma padrão de implementar o encapsulamento, permitindo acesso controlado aos atributos privados.
 
+### Modificadores de Acesso em Java
+
+- **`public`:** Visível para qualquer outra classe, em qualquer pacote, é o nível menos restritivo. Usado em métodos que formam a interface do seu objeto (os "serviços" que ele oferece), como `getters`, `setters` e construtores.
+- **`private`:** Visível apenas dentro da pŕopria classe onde foi declarado. Nenhuma outra classe pode ver ou acessar. Usado em atributos (variáveis de instância). Isso força o uso de métodos `public` (get/set) para manipular os dados, garantindo a ocultação da informação.
+- **`protected`:** Visível dentro da própria classe, para outras classes no mesmo pacote e para **subclasses (herdeiros)**, mesmo que estejam em pacotes diferentes. Usado em herança, quando você quer que a classe filha tenha acesso direto a um método ou atributo da classe mãe, mas ainda quer protegê-la do resto do mundo.
+- **`default` ou `package-private`:** Modificador padrão. Visível para todas as classes que estão no mesmo pacote. Útil para classes ou membros que são "ajudantes" e só precisam ser vistos por outras classes dentro do mesmo conjunto lógico de funcionalidades (pacote).
+
 ### Síntese Final
 
 - **Classes** são os **moldes** e **Objetos** são as **intâncias concretas criadas** a partir desses moldes. O poder da POO vem de agrupar dados (atributos) e comportamentos (métodos) juntos e protegê-los com o encapsulamento, tornando o código mais seguro e reutilizável.
-
-
+- **Obs:** O texto-base utilizado nessa semana foi o mesmo da semana anterior.

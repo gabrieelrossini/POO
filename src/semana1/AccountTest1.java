@@ -5,10 +5,8 @@ package src.semana1;
 
 import java.util.Scanner;
 
-public class AccountTest1
-{
-    public static void main(String[] args)
-    {
+public class AccountTest1 {
+    public static void main(String[] args)  {
         // cria um objeto Scanner para obter entrada a partir da janela de comando
         Scanner input = new Scanner(System.in);
 

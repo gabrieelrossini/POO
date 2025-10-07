@@ -5,10 +5,8 @@ package src.semana2;
 
 import java.util.Scanner;
 
-public class Account2Test 
-{
-    public static void main(String[] args)
-    {
+public class Account2Test {
+    public static void main(String[] args) {
         Account2 account1 = new Account2("Jane green", 50.00);
         Account2 account2 = new Account2("John Blue", -7.53);
 
