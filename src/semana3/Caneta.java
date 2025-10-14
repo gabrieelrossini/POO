@@ -45,6 +45,9 @@ public class Caneta {
         this.tamanho = tamanho;
     }
 
+    // Método toString
+
+    @Override
     public String toString() {
         return String.format ("A caneta é da marca %s, da cor %s e tem %.2f de tamanho", marca, cor, tamanho);
     }
