@@ -47,7 +47,7 @@ public class Caneta {
 
     // Método toString
 
-    @Override
+    @Override // Anotação de boa prática para indicar sobrescrita
     public String toString() {
         return String.format ("A caneta é da marca %s, da cor %s e tem %.2f de tamanho", marca, cor, tamanho);
     }
