@@ -32,6 +32,8 @@ public class Professor {
         this.nome = nome;
     }
 
+    // Método de cálculo do salário
+
     public double calcularSalario() {
         return 0.0;
     }
