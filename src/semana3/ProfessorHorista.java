@@ -5,7 +5,7 @@ public class ProfessorHorista extends Professor {
     private double valorHora;
     private double qntHora;
 
-    public ProfessorHorista(double matricula, String nome, double valorHora, double qntHora) {
+    public ProfessorHorista(int matricula, String nome, double valorHora, double qntHora) {
         super(matricula, nome);
         this.valorHora = valorHora;
         this.qntHora = qntHora;

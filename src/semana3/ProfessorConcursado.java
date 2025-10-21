@@ -8,7 +8,7 @@ public class ProfessorConcursado extends Professor {
 
     // Construtor da subclasse adicionando o construtor do salário fixo
 
-    public ProfessorConcursado(double matricula, String nome, double salarioFixo) {
+    public ProfessorConcursado(int matricula, String nome, double salarioFixo) {
         super(matricula, nome);
         this.salarioFixo = salarioFixo;
     }

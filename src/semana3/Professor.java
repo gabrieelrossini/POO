@@ -4,23 +4,23 @@ public class Professor {
     
     // Atributos
 
-    private double matricula;
+    private int matricula;
     private String nome;
 
     // Construtor
 
-    public Professor(double matricula, String nome) {
+    public Professor(int matricula, String nome) {
         this.matricula = matricula;
         this.nome = nome;
     }
 
     // Get e Set
 
-    public double getMatricula() {
+    public int getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(double matricula){
+    public void setMatricula(int matricula){
         this.matricula = matricula;
     }
 
