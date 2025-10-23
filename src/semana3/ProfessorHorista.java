@@ -1,5 +1,8 @@
 package src.semana3;
 
+// Exercício de atividade complementar: ProfessorHorista.java
+// Exercitando conceito de herança e polimorfismo em POO
+
 public class ProfessorHorista extends Professor {
 
     private double valorHora;

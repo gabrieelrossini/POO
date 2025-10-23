@@ -1,5 +1,8 @@
 package src.semana3;
 
+// Exercício de atividade complementar: CanetaTeste.java
+// Exercitando conceito de herança e polimorfismo em POO
+
 public class CanetaTeste extends Caneta {
     // Construtor da subclasse que chama o construtor da superclasse
     public CanetaTeste(String marca, String cor, double tamanho){

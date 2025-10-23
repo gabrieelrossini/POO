@@ -1,5 +1,8 @@
 package src.semana3;
 
+// Exercício de atividade complementar: TesteProfessor.java
+// Exercitando conceito de herança e polimorfismo em POO
+
 public class TesteProfessor{
 
     public static void main (String[] args) {

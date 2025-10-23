@@ -1,5 +1,8 @@
 package src.semana3;
 
+// Exercício de atividade complementar: ProfessorConcursado.java
+// Exercitando conceito de herança e polimorfismo em POO
+
 public class ProfessorConcursado extends Professor {
 
     // Atributo do salário fixo
