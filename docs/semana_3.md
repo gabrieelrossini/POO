@@ -44,4 +44,37 @@ Aqui, `Estudante` herda de `Pessoa`.
     - **Comportamento:** Permite que um mesmo nome de método realize operações ligeiramente diferentes dependendo dos argumentos fornecidos.
     - **Decisão:** O compilador decide qual método chamar com base nos argumentos fornecidos na chamada (em tempo de compilação).
 
-** 3. Palavras-Chave Importantes (`this` e `super`):**
+## 3. Palavras-Chave Importantes (`this` e `super`):
+
+- **`this`:** Refere-se à instância atual do objeto. É usado principalmente para:
+    - Desambiguar entre atributos da classe e parâmetros de métodos/construtores com o mesmo nome (Ex: `this.nome = nome`.)
+    - Chamar outro construtor da mesma classe (`this(...)`).
+- **`super`:** Refere-se à superclasse imediata. É usado principalmente para:
+    - Chamar o construtor da superclasse a partir do construtor da subclasse(`super(...)`).
+    - Chamar um método da superclasse que foi sobrescrito na subclasse(`super.nomeDoMetodo()`).
+
+## 4. Restringindo Modificações: Classes e Métodos `final`
+
+- **Conceito:** O modificador `final` impede alterações.
+- **Atributos `final`:** Tornam-se constantes após a inicialização (seja na declaração, em um bloco de inicialização ou no construtor).
+- **Métodos  `final`:** Não podem ser sobrescritos por subclasses. Garante que o comportamento do método não será alterado na hierarquia. Métodos `private` são implicitamente `final`.
+- **Classes  `final`:** Não podem ser herdadas (estendidas). Útil para classes cujo design não prevê especialização.
+
+O modificador `final` pode ser aplicado a classes, métodos e atributos.
+
+## 5. Abstração: Classes Abstratas e Interfaces
+
+### Classes Abstratas:
+
+- Declaradas com `abstract`. Não podem ser instanciadas.
+- Servem como superclasses para fornecer uma estrutura comum e compartilhar código (atributos e métodos concretos).
+- Podem conter **métodos abstratos** (declarados com `abstract` e sem corpo).
+- Subclasses concretas **devem** implementar todos os métodos abstratos herdados.
+
+### Interfaces:
+
+- Definem um "contrato" de métodos que uma classe deve implementar (usando `implements`).
+- Garantem que classes diferentes possam ser tratadas de forma polimórfica se implementarem a mesma interface.
+- Uma classe pode implementar **múltiplas** interfaces.
+- Tradicionalmente continham apenas constantes e métodos abstratos, mas versões mais recentes do Java permitem métodos `default` e `static` com implementação.
+- Diferentes classes podem implementar os métodos da interface de maneiras completamente distintas.
