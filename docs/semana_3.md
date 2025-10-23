@@ -6,7 +6,7 @@
 
 **Implementação em Java:** A palaca chave `extends` é usada para estabelecer a herança.
 
-```java
+``` java
 
 public class Pessoa {
     // ... atributos e métodos ...
