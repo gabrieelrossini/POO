@@ -4,7 +4,7 @@
 
 **Conceito:** A herança descreve uma relação "é um" entre classes, onde uma classe mais específica (subclasse/filha) herda atributos e métodos de uma classe mais genérica (superclasse/mãe). Isso permite que características comuns sejam definidas uma única vez na superclasse e reutilizadas pelas subclasses. As subclasses podem então adicionar seus próprios atributos e métodos, tornando-se versões especializadas da superclasse.
 
-**Implementação em Java:** A palaca chave `extends` é usada para estabelecer a herança.
+**Implementação em Java:** A palavra chave `extends` é usada para estabelecer a herança.
 
 ``` Java
 public class Pessoa {
@@ -42,6 +42,13 @@ Aqui, `Estudante` herda de `Pessoa`.
     - Ocorre quando existem vários métodos com o **mesmo nome** dentro da **mesma classe**, mas com **assinaturas diferentes**(diferente número, tipo, ou ordem de parâmetros).
     - **Comportamento:** Permite que um mesmo nome de método realize operações ligeiramente diferentes dependendo dos argumentos fornecidos.
     - **Decisão:** O compilador decide qual método chamar com base nos argumentos fornecidos na chamada (em tempo de compilação).
+
+### Exemplo de Polimorfismo
+
+```Java
+Pessoa p1 = new Estudante(); // Estudante é UMA Pessoa
+p1.metodo(); // Chama a implementação de Estudante (se sobrescrito)
+```
 
 ## 3. Palavras-Chave Importantes (`this` e `super`):
 

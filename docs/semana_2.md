@@ -74,6 +74,32 @@ public class Pessoa {
 // Sintaxe: NomeDaClasse nomeDaVariavel = new NomeDaClasse();
 Carro meuCarro = new Carro();
 ```
-- **Construtores:** São métodos especiais com o mesmo nome da classe, sem tipo de retorno. São executados automaticamente quando um objeto é criado com `new`. Sua principal função é inicializar os atributos, garantindo que o objeto já nasça em um estado válido e consistente.
+- **Construtores:** São métodos especiais com o mesmo nome da classe, sem tipo de retorno. São executados automaticamente quando um objeto é criado com `new`. Sua principal função é inicializar os atributos, garantindo que o objeto já nasça em um estado válido e consistente. O Java fornece um **construtor padrão** (sem parâmetros) automaticamente.
     - **Sobrecarga de Construtores:** É possível ter vários construtores na mesma classe, desde que suas listas de parâmetros sejam diferentes. isso é uma forma de **Polimorfismo**.
     - **Chamando Construtores com `this()`:** Um construtor pode chamar outro construtor da mesma classe usando `this(...)`. Isso deve ser a primeira linha de código e serve para reaproveitar lógica e evitar código repetido.
+
+### Exemplo de Sobrecarga
+
+```Java
+public class Pessoa {
+    private String nome;
+    private int idade;
+
+    // Construtor padrão
+    public Pessoa() {
+        this.nome = "Sem nome";
+        this.idade = 0;
+    }
+
+    // Construtor com parâmetros
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    // Construtor chamando outro com this()
+    public Pessoa(String nome) {
+        this(nome, 0); // Chama o construtor acima
+    }
+}
+```

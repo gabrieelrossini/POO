@@ -8,7 +8,7 @@ Antes da introdução dos Generics, classes de coleções como `ArrayList` armaz
 
 **Sintaxe e Classes Empacotadoras:** A sintaxe dos genéricos utiliza colchetes angulares (`<>`). Por exemplo, uma classe genérica simples pode ser definida como `public class Caixa<T> { ... }`, onde `T` é o parâmetro de tipo, Ao instanciar, o tipo real é fornecido: `Caixa<Integer> c = new Caixa<Integer>();`. Uma limitação importante é que Generics não aceitam tipos primitivos (como `int` ou `double`). Para contornar isso, devem ser usadas as classes empacotadoras (wrapper) correspondentes (como `Integer` ou `Double`). O Java facilita esse processo através do *autoboxing* (a conversão automática de um primitivo para seu objeto empacotador, ex: `int` para `Integer`) e *auto-boxing* (a conversão inversa, ex: `Integer` para `int`).
 
-**Métodos Genéricos e Herança:** Métodos também podem ser genéricos, independentemente de sua classe ser genérica. Isso é ffeito declarando um parâmetro de tipo antes do tipo de retorno do método (por exemplo, `public static <T> void imprimirArray(T[] array)`). No que tange à herança, é possível herdar de classes genéricas. Por exemplo, a classe `ArrayList<E>` implementa a interface `List<E>`, que por sua vez herda de `Collection<E>`. É fundamental notar que não há relação de herança entre os tipos genéricos em si; por exemplo, um `List<Integer>` *não* é considerado uma subclasse de `List<Number>`, embora `Integer` seja uma subclasse de `Number`.
+**Métodos Genéricos e Herança:** Métodos também podem ser genéricos, independentemente de sua classe ser genérica. Isso é feito declarando um parâmetro de tipo antes do tipo de retorno do método (por exemplo, `public static <T> void imprimirArray(T[] array)`). No que tange à herança, é possível herdar de classes genéricas. Por exemplo, a classe `ArrayList<E>` implementa a interface `List<E>`, que por sua vez herda de `Collection<E>`. É fundamental notar que não há relação de herança entre os tipos genéricos em si; por exemplo, um `List<Integer>` *não* é considerado uma subclasse de `List<Number>`, embora `Integer` seja uma subclasse de `Number`.
 
 ### Exemplo de Generics ###
 
@@ -23,9 +23,9 @@ String primeiroNome = nomes.get(0); // Não precisa de (String) casting.
 System.out.println(primeiroNome.toUpperCase()); // Saída: MARIA
 
 // 2. Usando Generics com Autoboxing
-List<Integer> numeros = new ArrayList();
+List<Integer> numeros = new ArrayList<>();
 numeros.add(10); // Autoboxing: o int 10 vira um objeto Integer
-int primeiroNumero = numero.get(0); // Auto-unboxing: o Integer vira int
+int primeiroNumero = numeros.get(0); // Auto-unboxing: o Integer vira int
 ```
 
 ## 2. Framework de Coleções (Collections Framework)

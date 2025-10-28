@@ -19,6 +19,8 @@ Todos os componentes de um programa são considerados objetos. Os programas acab
 - **Objeto:** Possui estado, identidade e comportamento.
 - **Abstração:** O conceito de esconder detalhes irrelevantes e focar no essencial (ex: um usuário não precisa saber de mecânica para dirigir um carro).
 - **Encapsulamento:** Proteger a parte interna de um código, expondo apenas uma interface bem definida para interação.
+- **Herança:** Uma classe mais específica (subclasse/filha) herda atributos e métodos de uma classe mais genérica (superclasse/mãe).
+- **Polimorfismo:** Capacidade de objetos de diferentes classes responderem à mesma mensagem (chamada de método) de maneiras específicas para cada classe.
 
 ## Aula 2 - Java e Frameworks de Desenvolvimento
 
@@ -29,7 +31,7 @@ Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), m
     1. **Edição:** Inserção do código usando um editor em arquivo `.java`.
     2. **Compilação:** O compilador (`javac`) transforma o código em **bytecodes**, que são salvos em um arquivo `.class`. Representam as tarefas a serem executadas na fase de execução.
     3. **Carrega o programa Java em memória:** A **JVM** (Java Virtual Machine) armazena o programa em memória para executá-lo, efetuando o seu carregamento.
-    4. **Verificar os bytecodes:** Enquanto as classes são carregadas, o verificados examina seus bytecodes para t er certeza que são válidas.
+    4. **Verificar os bytecodes:** Enquanto as classes são carregadas, o verificados examina seus bytecodes para ter certeza que são válidas.
     5. **Execução:** A JVM carrega os bytecodes e os interpreta ou compila (usando JIT - Just-in-Time) para a linguagem de máquina do computador, executando o programa
 
 - **Ambiente de Desenvolvimento**
