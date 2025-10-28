@@ -50,7 +50,7 @@ Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), m
 
 **Código Apresentado em Aula**
 
-```java
+```Java
 // Meu primeiro programa em Java
 
 public class Teste {

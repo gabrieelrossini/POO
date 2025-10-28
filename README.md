@@ -33,7 +33,7 @@ O curso é dividido em oito semanas, sendo sete de matéria e a ultima de revis�
 - [x] **Semana 2:** Classes e Objetos; Encapsulamento e Ocultação de Informação
     - [Ver Anotações](./docs/semana_2.md)
     - [Ver Código](./src/semana2/)
-- [ ] **Semana 3:** Herança, Polimorfismo e Interfaces
+- [X] **Semana 3:** Herança, Polimorfismo e Interfaces
     - [Ver Anotações](./docs/)
     - [Ver Código](./src/)
 - [ ] **Semana 4:** Classes e Métodos Genéricos e Classes de Coleções em Java
