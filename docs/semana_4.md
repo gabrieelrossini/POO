@@ -1,0 +1,11 @@
+# Semana 4 - Métodos e Framework de Coleções em Java
+
+## 1. Métodos Genéricos
+
+**Conceito:** Os Generics (Tipos Genéricos) são um recurso essencial do Java que permite que tipos, como classes e interfaces, sejam utilizados como parâmetros na definição de outras classes, interfaces e métodos. O objetivo principal é criar códigos que possam ser reutilizados para diferentes tipos de dados, ao mesmo tempo que garantem a segurança de tipo (type safety) em tempo de compilação.
+
+Antes da introdução dos Generics, classes de coleções como `ArrayList` armazenavam referências do tipo `Object`. Como `Object` é a superclasse de todos os objetos em Java, isso permitia que qualquer tipo de dado fosse inserido em uma mesma lista (por exemplo, um `Integer` e uma `String`). Isso criava dois problemas: primeiro, exigia uma conversão explícita (casting) ao recuperar os elementos (ex: `String s = (String)lista.get(0);`); segundo, podia causar erros em tempo de execução (`ClassCastException`) se o tipo recuperado não fosse o esperado. Com Generics, um programador pode declarar `List<String>`. O compilador então garante que apenas objetos `String` sejam adicionados, eliminando a necessidade de casting e movendo a verificação de tipo do tempo de execução para o tempo de compilação.
+
+**Sintaxe e Classes Empacotadoras:** A sintaxe dos genéricos utiliza colchetes angulares (`<>`). Por exemplo, uma classe genérica simples pode ser definida como `public class Caixa<T> { ... }`, onde `T` é o parâmetro de tipo, Ao instanciar, o tipo real é fornecido: `Caixa<Integer> c = new Caixa<Integer>();`. Uma limitação importante é que Generics não aceitam tipos primitivos (como `int` ou `double`). Para contornar isso, devem ser usadas as classes empacotadoras (wrapper) correspondentes (como `Integer` ou `Double`). O Java facilita esse processo através do *autoboxing* (a conversão automática de um primitivo para seu objeto empacotador, ex: `int` para `Integer`) e *auto-boxing* (a conversão inversa, ex: `Integer` para `int`).
+
+**Métodos Genéricos e Herança**
