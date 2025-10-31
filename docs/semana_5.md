@@ -1,4 +1,4 @@
-# Semana 5 - Collections (Set, Map), Recursão e Generics
+# Semana 5 - Conjuntos e Mapas
 
 ## 1. A Interface Set (Conjuntos)
 
@@ -71,8 +71,25 @@ meuMapa.put("RJ", "Rio de Janeiro");
 System.out.printf("Conteúdo do mapa: %s%n", meuMapa);
 // Buscando um valor pela chave:
 System.out.printf("A sigla %s corresponde a: %s%n", "RJ", meuMapa.get("RJ"));
+
+meuMapa.containsKey("SP");    // verifica se chave existe
+meuMapa.containsValue("Rio"); // verifica se valor existe
+meuMapa.remove("RJ");         // remove por chave
+meuMapa.size();               // número de pares
 ```
 
 ## 7. A Implementação TreeMap (e SortedMap)
 
-**Conceito:** O `TreeMap` é a implementação da interface `SortedMap` (que estende `Map`). De forma análoga ao `TreeSet`, ele armazena seus pares chave-valor
+**Conceito:** O `TreeMap` é a implementação da interface `SortedMap` (que estende `Map`). De forma análoga ao `TreeSet`, ele armazena seus pares chave-valor em uma árvore rubro-negra, ordenada de acordo com as *chaves*. Isso garante que, ao iterar sobre o mapa (por exemplo, sobre seu `keySet()` ou `entrySet()`), as chaves serão apresentadas em ordem classificada (natural ou por `Comparator`). Assim como o `TreeSet`, suas operações são mais lentas que as do `HashMap` (custo O(logn)), sendo a escolha ideal quando a ordem de classificação das chaves é um requisito.
+
+### Exemplo de Código:
+
+```Java
+// TreeMap ordena os pares pela chave
+Map<Integer, String> meuMapa = new TreeMap<>();
+meuMapa.put(3, "Item C");
+meuMapa.put(1, "Item A");
+meuMapa.put(2, "Item B");
+// A impressão é ordenada pelas chaves: {1=Item A, 2=Item B, 3=Item C}
+System.out.println(meuMapa);
+```
