@@ -50,7 +50,7 @@ Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), m
         - **Exemplo:** `java src.Teste`
         - **O que faz:** Invoca a JVM, que carrega o `bytecode` do arquivo `.class`, verifica, e o executa.(Lembre-se: no comando `java`, usamos o nome do pacote e da classe, sem a extensao `.class`).
 
-**Exemplo de Código**
+### Exemplo de Código
 
 ```Java
 // Meu primeiro programa em Java

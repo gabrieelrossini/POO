@@ -78,8 +78,6 @@ Carro meuCarro = new Carro();
     - **Sobrecarga de Construtores:** É possível ter vários construtores na mesma classe, desde que suas listas de parâmetros sejam diferentes. isso é uma forma de **Polimorfismo**.
     - **Chamando Construtores com `this()`:** Um construtor pode chamar outro construtor da mesma classe usando `this(...)`. Isso deve ser a primeira linha de código e serve para reaproveitar lógica e evitar código repetido.
 
-### Exemplo de Sobrecarga
-
 ```Java
 public class Pessoa {
     private String nome;

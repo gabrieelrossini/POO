@@ -8,7 +8,7 @@
 
 **Conceito:** A classe `HashSet` é a implementação mais comum e de melhor desempenho da interface `Set`. Ela armazena seus elementos internamente utilizando uma Tabela Hash (ou *hashing*), baseando-se no `hashCode` do elemento para determinar onde amarzená-lo. Essa estrutura permite operações de adição, remoção e verificação de existência (métodos  `contains`) em tempo médio constante, O(1), desde que a função de hash seja bem distribuída. A principal consequência do uso de *hashing* é que o `HashSet` não oferece absolutamente nenhuma garantia quanto à ordem de iteração dos elementos; a ordem pode parecer aleatória e mudar conforme novos elementos são adicionados. O `HashSet` permite a inclusão de, no máximo, um elemento nulo.
 
-### Exemplo de Código:
+### Exemplo de Código
 
 ```Java
 // HashSet ignora duplicatas e não garante a ordem
@@ -24,7 +24,7 @@ System.out.println(meuSet);
 
 **Conceito:** A classe `LinkedHashSet` é uma implementação especializada que estende  `HashSet`. Ela utiliza internamente a mesma Tabela Hash para garantir a performance e a unicidade dos elementos, mas adiciona uma estrutura de dados secundária: uma lista duplamente encadeada (ligada) que conecta os elementos. O propósito dessa lista é manter e iterar sobre os elementos na ordem exata em que eles foram inseridos no conjunto. Portanto, embora tenha uma performance de inserção ligeiramente inferior ao `HashSet` (devido à manutenção da lista), ela garante que a ordem de iteração será previsível e idêntica à ordem de inserção.
 
-### Exemplo de Código:
+### Exemplo de Código
 
 ```Java
 // LinkedHashSet mantém a ordem de inserção
@@ -40,7 +40,7 @@ System.out.println(meuSet);
 
 **Conceito:** A classe `TreeSet` é a principal implementação da interface `SortedSet`, que por sua vez estende `Set`. Sua característica distintiva é que ela armazena os elementos em uma estrutura de árvore balanceada (especificamente, uma árvore rubro-negra). O resultado é que o `TreeSet` mantém seus elementos *sempre* em ordem classificada, seja pela ordem natual dos elementos (como a ordem alfabética para `String` ou numérica para `Integer`) ou por um `Comparator` fornecido no momento da criação do conjunto. Por garantir a ordem, suas operações (adição, remoção) são mais lentas que as do `HashSet`, geralmente com custo O(logn). Como implementa `SortedSet`, ela oferece métodos adicionais para navegação baseada na ordem, como `first()` (menor elemento), `last()` (maior elemento), `headSet()` (elementos menores que um valor específico) e `tailSet()` (elementos maiores ou iguais a um valor específico).
 
-### Exemplo de Código:
+### Exemplo de Código
 
 ```Java
 // TreeSet mantém a ordem natural (alfabética, neste caso)
@@ -60,7 +60,7 @@ System.out.println(meuSet);
 
 **Conceito:** O `HashMap` é a implementação mais comum de `Map` e funciona de maneira análoga ao `HashSet`. Ele armazena os pares chave-valor em uma Tabela Hash, baseando-se no `hashCode` da *chave* para determinar a localização do par. Assim como o `HashSet`, o `HashMap` oferece excelente desempenho (tempo médio O(1)) para inserção (`put`) e recuperação (`get`), mas não fornece nenhuma garantia sobre a ordem de iteração dos pares chave-valor. O `HashMap` permite uma chave nula e múltiplos valores nulos. Uma implementação mais antiga e semelhante é a `Hashtable`, que também usa *hashing*, mas é sincronizada (thread-safe) e, diferentemente do `HashMap`, não permite chaves ou valores nulos.
 
-### Exemplo de Código:
+### Exemplo de Código
 
 ```Java
 // HashMap associa chaves a valores; não garante ordem
@@ -82,7 +82,7 @@ meuMapa.size();               // número de pares
 
 **Conceito:** O `TreeMap` é a implementação da interface `SortedMap` (que estende `Map`). De forma análoga ao `TreeSet`, ele armazena seus pares chave-valor em uma árvore rubro-negra, ordenada de acordo com as *chaves*. Isso garante que, ao iterar sobre o mapa (por exemplo, sobre seu `keySet()` ou `entrySet()`), as chaves serão apresentadas em ordem classificada (natural ou por `Comparator`). Assim como o `TreeSet`, suas operações são mais lentas que as do `HashMap` (custo O(logn)), sendo a escolha ideal quando a ordem de classificação das chaves é um requisito.
 
-### Exemplo de Código:
+### Exemplo de Código
 
 ```Java
 // TreeMap ordena os pares pela chave

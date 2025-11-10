@@ -2,7 +2,7 @@
 
 ## 1. Generics (Tipos Genéricos, Métodos e Curingas)
 
-**Conceito:** Generics (Tipos Genéricos) é um recurso essencial do Java que permite que tipos (classes e interfaces) sejam usados como parâmetros na definição de outras classes, interfaces e métodos. O objetivo principal é criar códigos que possam ser reutilizados para diferentes tipos de dados, garantindo a segurança de tipo (type safety) em tempo de compilação. Antes dos Generics, coleções como `ArrayList` armazenavam referências do tipo `Object`, o que permitia misturar tipos (ex: `Integer` e `String`) e exigia uma conversão explícita (casting) ao recuperar elementos (ex: `String s = (String)lista.get(0);`). Isso era perigoso, pois podia causar erros em tempo de execução (`ClassCastException`). Com Generics, ao declarar `List<String>`, o compilador garante que apenas *strings* sejam adicionados, eliminando a necessidade de casting e movendo a verificação de tipo para a compilação.
+Generics (Tipos Genéricos) é um recurso essencial do Java que permite que tipos (classes e interfaces) sejam usados como parâmetros na definição de outras classes, interfaces e métodos. O objetivo principal é criar códigos que possam ser reutilizados para diferentes tipos de dados, garantindo a segurança de tipo (type safety) em tempo de compilação. Antes dos Generics, coleções como `ArrayList` armazenavam referências do tipo `Object`, o que permitia misturar tipos (ex: `Integer` e `String`) e exigia uma conversão explícita (casting) ao recuperar elementos (ex: `String s = (String)lista.get(0);`). Isso era perigoso, pois podia causar erros em tempo de execução (`ClassCastException`). Com Generics, ao declarar `List<String>`, o compilador garante que apenas *strings* sejam adicionados, eliminando a necessidade de casting e movendo a verificação de tipo para a compilação.
 
 A sintaxe usa colchetes angulares (`<>`), onde `T` é um parâmetro de tipo comum (ex: `public class Caixa<T> { ... }`). Generics não aceitam tipos primitivos (como `int`); devem ser usadas as classes empacotadoras (wrapper) correspondentes (como `Integer`). O Java facilita isso com *autoboxing* (conversão automatica de `int` para `integer`) e *unboxing* (de `Integer` para `int`). É possível definir métodos genéricos (declarando o tipo antes do retorno, ex: `public <T> void imprimirArray(T[] array)`) e classes genéricas.
 
@@ -11,7 +11,7 @@ A sintaxe usa colchetes angulares (`<>`), onde `T` é um parâmetro de tipo comu
 - **`<? extends Classe>` (Limite Superior):** Significa "qualquer tipo que seja `Classe` ou uma *subclasse* dela". É usado quando se deseja *ler* elementos de uma estrutura (ex:`List<? extends Number>` pode aceitar uma `List<Integer>` ou `List<Double>` para leitura).
 - **`<? super Classe>` (Limite Inferior):** Significa "qualquer tipo que seja `Classe` ou uma *superclasse* dela". É usado quando se deseja *escrever* (adicionar) elementos em uma estrutura.
 
-### Exemplos de Código:
+### Exemplo de Código
 
 ```Java
 // 1. Segurança de Tipo em Coleções
@@ -49,7 +49,7 @@ public void imprimirLista(List<? extends Number> lista) {
 
 ## 2. Framework de Coleções (Collections Framework)
 
-**Conceito:** O Framework de Coleções, localizado no pacote `java.util`, é uma arquitetura unificada e robusta para armazenar e manipular grupos de objetos. Ele é composto por interfaces (que definem os tipos abstratos de coleções), implementações (as classes concretas que fornecem as estruturas de dados, como listas ou conjuntos) e algoritmos (métodos estáticos para realizar operações como classificação ou busca). Diferente dos arrays, as coleções são estruturas de dados dinâmicas, podendo crescer ou diminuir de tamanho conforme a necessidade.
+O Framework de Coleções, localizado no pacote `java.util`, é uma arquitetura unificada e robusta para armazenar e manipular grupos de objetos. Ele é composto por interfaces (que definem os tipos abstratos de coleções), implementações (as classes concretas que fornecem as estruturas de dados, como listas ou conjuntos) e algoritmos (métodos estáticos para realizar operações como classificação ou busca). Diferente dos arrays, as coleções são estruturas de dados dinâmicas, podendo crescer ou diminuir de tamanho conforme a necessidade.
 
 **Interface `Collection`:** Esta é a interface raiz da hierarquia (excluindo `Map`). Ela define os métodos comuns que todas as coleções devem implementar, como `add(E elemento)`, `remove(Object elemento)`, `size()` e `isEmpty()`. As principais subinterfaces que herdam dela são `List`, `Set` e `Queue`.
 
@@ -65,7 +65,7 @@ public void imprimirLista(List<? extends Number> lista) {
 
 **Interface `Map`:** Embora não herde diretamente da interface `Collection`, a `Map` é uma parte essencial do framework. Ela mapeia chaves únicas e valores (pares chave-valor) e não pode conter chaves duplicadas. Implementações comuns incluem `HashMap` (baseada em hash, não ordenada), `TreeMap` (baseada em árvore, armazena chaves ordenadas) e `Hashtable` (uma implementação legada e sincronizada).
 
-### Exemplo de Coleções (List vs Set)
+### Exemplo de Código
 
 ```Java
 // 1. Exemplo de List (permite duplicatas e mantém ordem de inserção)
@@ -99,7 +99,7 @@ System.out.println(setNomes); // Saída (ordem não garantida): [Ana, Carlos]
     - `frequency(Collection c, Object o)`: Conta o número de vezes que um elemento específico aparece na coleção.
     - `copy(List dest, List src)`: Copia os elementos da lista de origem (`src`) para a lista de destino (`dest`).
 
-### Exemplo de Iterador e Algoritmo
+### Exemplo de Código
 
 ```Java
 List<String> frutas = new ArrayList<>();

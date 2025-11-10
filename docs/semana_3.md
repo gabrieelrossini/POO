@@ -6,6 +6,8 @@
 
 **Implementação em Java:** A palavra chave `extends` é usada para estabelecer a herança.
 
+### Exemplo de Código
+
 ``` Java
 public class Pessoa {
     // ... atributos e métodos ...
@@ -43,7 +45,7 @@ Aqui, `Estudante` herda de `Pessoa`.
     - **Comportamento:** Permite que um mesmo nome de método realize operações ligeiramente diferentes dependendo dos argumentos fornecidos.
     - **Decisão:** O compilador decide qual método chamar com base nos argumentos fornecidos na chamada (em tempo de compilação).
 
-### Exemplo de Polimorfismo
+### Exemplo de Código
 
 ```Java
 Pessoa p1 = new Estudante(); // Estudante é UMA Pessoa
