@@ -1,6 +1,6 @@
 # Semana 1 - Paradigmas de Programação; Introdução ao Paradigma Orientado a Objetos; Java e Frameworks de Desenvolvimento
 
-## Aula 1 - Paradigmas de Programação e Introdução à POO
+## Paradigmas de Programação e Introdução à POO
 
 ### Paradigmas de Programação
 
@@ -22,7 +22,7 @@ Todos os componentes de um programa são considerados objetos. Os programas acab
 - **Herança:** Uma classe mais específica (subclasse/filha) herda atributos e métodos de uma classe mais genérica (superclasse/mãe).
 - **Polimorfismo:** Capacidade de objetos de diferentes classes responderem à mesma mensagem (chamada de método) de maneiras específicas para cada classe.
 
-## Aula 2 - Java e Frameworks de Desenvolvimento
+## Java e Frameworks de Desenvolvimento
 
 Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), modelada no C++ e projetada para ser portável (funcionar em diferentes OS).
 
@@ -50,7 +50,7 @@ Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), m
         - **Exemplo:** `java src.Teste`
         - **O que faz:** Invoca a JVM, que carrega o `bytecode` do arquivo `.class`, verifica, e o executa.(Lembre-se: no comando `java`, usamos o nome do pacote e da classe, sem a extensao `.class`).
 
-**Código Apresentado em Aula**
+**Exemplo de Código**
 
 ```Java
 // Meu primeiro programa em Java
