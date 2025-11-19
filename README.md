@@ -34,16 +34,16 @@ O curso é dividido em oito semanas, sendo sete de matéria e a ultima de revis�
     - [Ver Anotações](./docs/semana_2.md)
     - [Ver Código](./src/semana2/)
 - [X] **Semana 3:** Herança, Polimorfismo e Interfaces
-    - [Ver Anotações](./docs/)
+    - [Ver Anotações](./docs/semana_3.md)
     - [Ver Código](./src/)
 - [ ] **Semana 4:** Classes e Métodos Genéricos e Classes de Coleções em Java
-    - [Ver Anotações](./docs/)
+    - [Ver Anotações](./docs/semana_4.md)
     - [Ver Código](./src/)
 - [ ] **Semana 5:** Conjuntos e Mapas
-    - [Ver Anotações](./docs/)
+    - [Ver Anotações](./docs/semana_5.md)
     - [Ver Código](./src/)
 - [ ] **Semana 6:** Tratamento de Exceções
-    - [Ver Anotações](./docs/)
+    - [Ver Anotações](./docs/semana_6.md)
     - [Ver Código](./src/)
 - [ ] **Semana 7:** Streams, Serialização e Deserialização de Objetos; uso de Threads em Java e Programação Java para Redes de Computadores
     - [Ver Anotações](./docs/)
