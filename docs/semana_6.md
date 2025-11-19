@@ -115,7 +115,7 @@ public class SaldoInsuficienteException extends RuntimeException {
 
 ## 9. Exceções Encadeadas (Chained Exceptions)
 
-Quando uma camada do sistema captura uma exceção de baixo nível e lança outra mais contextualizada, o **encadeamento** preserva o histórico original. Isso é feito passando a exceção original como argumento ao construtor da nova exceção. O rastreamento resultante mostra claramente a cadeira causal com linhas "Caused by", facilitando a depuração.
+Quando uma camada do sistema captura uma exceção de baixo nível e lança outra mais contextualizada, o **encadeamento** preserva o histórico original. Isso é feito passando a exceção original como argumento ao construtor da nova exceção. O rastreamento resultante mostra claramente a cadeia causal com linhas "Caused by", facilitando a depuração.
 
 ### Exemplo de Código
 

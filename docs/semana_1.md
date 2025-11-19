@@ -31,7 +31,7 @@ Linguagem que é orientada a objetos, foi desenvolvida pela Sun (hoje Oracle), m
     1. **Edição:** Inserção do código usando um editor em arquivo `.java`.
     2. **Compilação:** O compilador (`javac`) transforma o código em **bytecodes**, que são salvos em um arquivo `.class`. Representam as tarefas a serem executadas na fase de execução.
     3. **Carrega o programa Java em memória:** A **JVM** (Java Virtual Machine) armazena o programa em memória para executá-lo, efetuando o seu carregamento.
-    4. **Verificar os bytecodes:** Enquanto as classes são carregadas, o verificados examina seus bytecodes para ter certeza que são válidas.
+    4. **Verificar os bytecodes:** Enquanto as classes são carregadas, os verificadores examinam seus bytecodes para ter certeza que são válidas.
     5. **Execução:** A JVM carrega os bytecodes e os interpreta ou compila (usando JIT - Just-in-Time) para a linguagem de máquina do computador, executando o programa
 
 - **Ambiente de Desenvolvimento**
